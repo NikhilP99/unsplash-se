@@ -5,10 +5,10 @@ import { persistStore, persistReducer } from 'redux-persist'
 import { combineReducers } from 'redux'
 import storage from 'redux-persist/lib/storage' // defaults to localStorage for web
 
-import searchReducer from './search/reducers'
+import resultsReducer from './search/reducers'
 
 const rootReducer = combineReducers({
-  search: searchReducer
+  results: resultsReducer
 })
 
 const persistConfig = {
